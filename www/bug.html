@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/intro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body onload="speed(); colorfn();">
+	<div class="topnav" id="myTopnav">
+    <a href="#"></a>
+   <a href="home.html">Hud View</a>
+  <a href="normalView.html">Normal View</a>
+  <a href="maps.html">Map View</a>
+  <a href="settings.html">Settings</a>
+  <a href="bug.html">Report Bugs</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div id="content">
+<h3>iHUD Reports</h3>
+ <div id="logodiv">
+  <img src="img/logo.png">
+    </div>
+<div id="form">
+  <label>Name:</label><br> 
+  <input type="text" name="usrname" id="usrname"><br><br>
+  <label>Email:</label><br>
+  <input type="Email" name="usremail" id="usremail"><br><br>
+  <label>Bug:</label><br>
+  <textarea  id="textArea" name="textArea" rows="10" cols="30"></textarea><br>
+  <BR>
+    <input type="submit" value="Submit" class="w3-button w3-block w3-green" onclick="sendData()"/>
+</div>
+</div>
+
+</body>
+</html>

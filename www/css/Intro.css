@@ -1,0 +1,31 @@
+
+body {
+  background: #000;
+  color: #fff;
+  font: 5vw Helvetica, Arial, sans-serif;
+}
+#logodiv{
+  padding-top: 10%;
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+#message
+{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 2%;
+  border-style: outset;
+  border-color: #808080 ;
+ }
+#button{
+  margin-top: 40%;
+}
+iframe
+{
+  height: 500px;
+  width:  100%;
+}

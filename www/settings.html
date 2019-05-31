@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body onload=" speed(); colorfn();">
+	<div class="topnav" id="myTopnav">
+    <a href="#"></a>
+  <a href="home.html">Hud View</a>
+  <a href="normalView.html">Normal View</a>
+  <a href="maps.html">Map View</a>
+  <a href="settings.html">Settings</a>
+  <a href="bug.html">Report Bugs</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div id="content">
+<h3>iHUD Settings</h3>
+<p>
+
+<label>Select Display Colour:</label>
+<SELECT id="color">
+	
+	<option value="blue">blue</option>
+  <option value="blue">White</option>
+  <option value="yellow">yellow</option>
+  <option value="cyan">cyan</option>
+  <option value="pink">pink</option>
+  <option value="orange">orange</option>
+</SELECT>
+<br><br>
+<label>Enter your Eco Range:</label><br>
+<input type="number" name="rng1" id="rng1" size="3">  - <input type="number" name="rng2" id="rng2" size="3">
+<br><br>
+<label>Enter your Max Speed:</label><br>
+<input type="number" name="limit" id="limit" size="3">
+<br><br>
+<button type="submit" onclick="apply()">Apply Settings</button>
+
+</div>
+    
+
+</body>
+</html>

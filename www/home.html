@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+
+	<script src="js/index.js"></script>
+  <style>
+#content:hover {
+  color: black;
+}
+</style>
+</head>
+<body onload="speed(); colorfn();">
+	<div class="topnav" id="myTopnav">
+    <a href="#"></a>
+   <a href="home.html">Hud View</a>
+  <a href="normalView.html">Normal View</a>
+  <a href="maps.html">Map View</a>
+  <a href="settings.html">Settings</a>
+  <a href="bug.html">Report Bugs</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div id="content">
+<h1>iHUD</h1>
+<div id="bar">
+Your Land speed in :
+<select id="speedUnit">
+  <option value="1">Kmph</option>
+  <option value="2">Mph</option>
+</select>
+</div>
+</div>
+<br>
+<div id="ExtraMunchies">
+  <label style="text-align: center;">Nearest Location: </label> <br><span id="nrstGas"></span>
+</div>
+<div id="hudDisplay">
+<h1><p class="hud"><span id="speed">888</span> <span id="unit">km/h</span></p></h1>
+
+<br><br>
+<div id="munchies">
+<label style="float: left; padding-bottom: : 10px;">Avg Speed :</label><label id="avg1"style="padding-bottom: : 10px;">1</label>
+
+<span id="currTime" style="float: right;  padding-bottom: : 10px;">0:0:0</span>
+</div>
+</div>
+<script>
+ 
+loadfunc2();
+</script>
+</body>
+</html>
